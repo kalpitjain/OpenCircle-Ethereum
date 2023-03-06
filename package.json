@@ -1,7 +1,7 @@
 {
   "name": "opencircle",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -21,10 +21,6 @@
     "wagmi": "^0.9.6",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "./",
-  "Explore": "./Profile",
-  "Create": "./Create",
-  "Profile": "./Profile",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
