@@ -1,8 +1,7 @@
 {
   "name": "opencircle",
   "version": "1.0.0",
-  "private": false,
-  "proxy": "https://blue-poetry-1228.on.fleek.co/",
+  "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
