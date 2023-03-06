@@ -22,9 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "./",
-  "explore": "./explore",
-  "create": "./Create",
-  "profile": "./profile",
+  "Explore": "./Profile",
+  "Create": "./Create",
+  "Profile": "./Profile",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
