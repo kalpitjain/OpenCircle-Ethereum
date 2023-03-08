@@ -35,7 +35,7 @@ root.render(
   <React.StrictMode>
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider modalSize="compact" chains={chains}>
-        <Router>
+        <Router basename="/opencircle">
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />

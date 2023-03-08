@@ -40,7 +40,6 @@ function Profile() {
                 <>
                   <Edit />
                   <div className="action">
-                    {/* <button className="btn btn-primary">Done</button> */}
                     <button onClick={handleEditPage} className="btn">
                       Cancle
                     </button>
