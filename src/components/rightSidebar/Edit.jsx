@@ -2,8 +2,6 @@ import axios from "axios";
 import React, { useState } from "react";
 import configData from "../../Data.json";
 import { ethers } from "ethers";
-// import { useAccount } from 'wagmi'
-// import { upload } from '@testing-library/user-event/dist/upload'
 
 function Edit() {
   const [userName, setUserName] = useState();
@@ -49,15 +47,9 @@ function Edit() {
               pinata_secret_api_key:
                 "8ce0d49080a717d547482ac09191e276dd4cdbe49e67200313cd82c9cd6d7cfd",
             },
-            // headers: {
-            //   "Content-Type": "multipart/form-data",
-            //   pinata_api_key: "d9abe1a7fb96903a8d0b",
-            //   pinata_secret_api_key:
-            //     "78c4e76c51d023766c626297fbb4298565b02a20952cc6488e1988c7cfc35aa3",
-            // },
           }
         );
-        imgUrl = "https://gateway.pinata.cloud/ipfs/" + response.data.IpfsHash;
+        imgUrl = "https://gateway.ipfs.io/ipfs/" + response.data.IpfsHash;
       }
 
       const provider = new ethers.providers.Web3Provider(window.ethereum);
