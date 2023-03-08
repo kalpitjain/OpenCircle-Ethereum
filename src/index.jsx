@@ -37,7 +37,7 @@ root.render(
       <RainbowKitProvider modalSize="compact" chains={chains}>
         <Router basename="/opencircle">
           <Routes>
-            <Route index path="/home" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/create" element={<Create />} />
             <Route path="/profile" element={<Profile />} />
