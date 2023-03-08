@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Titile -->
+    <title>Open Circle</title>
 
-  <!-- Titile -->
-  <title>Open Circle</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
 
-  <!-- Base URL -->
-  <base href="/" />
+    <!-- Base URL -->
+    <base href="/" />
 
-  <!-- Favicon -->
-  <link style="border-radius: 100%;" rel="icon"
-    href="https://gateway.pinata.cloud/ipfs/QmZoaBTva3on5hfoMcT4pm9vS4mtHy4w1RNoa7AmdkwPZ4" />
+    <!-- Favicon -->
+    <link
+      style="border-radius: 100%"
+      rel="icon"
+      href="https://gateway.pinata.cloud/ipfs/QmZoaBTva3on5hfoMcT4pm9vS4mtHy4w1RNoa7AmdkwPZ4"
+    />
 
-  <!-- Google Fonts -->
+    <!-- Google Fonts -->
 
-  <!-- CSS -->
-  <link type="text/css" rel="stylesheet" href="main.css" />
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="main.css" />
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
-</head>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+  </head>
 
-<body>
-  <div id="root"></div>
+  <body>
+    <div id="root"></div>
 
-  <!-- Javascript -->
-  <script src="../src/index.jsx" type="text/jsx"></script>
-</body>
-
+    <!-- Javascript -->
+    <script src="../src/index.jsx" type="text/jsx"></script>
+  </body>
 </html>
